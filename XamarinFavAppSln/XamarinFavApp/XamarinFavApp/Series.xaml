@@ -1,12 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamarinFavApp.Series" Title="Series" BackgroundColor="Aqua">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:xamarinfavapp="clr-namespace:XamarinFavApp"
+             x:Class="XamarinFavApp.Series" Title="Series" IconImageSource="movies.png">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+            <ListView ItemsSource="{Binding SeriesList}" >
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="xamarinfavapp:SeriesItem">
+
+                        <ViewCell>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Grid.ColumnDefinitions>
+
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Padding=" 10,5,10,5" Text="{Binding Name}" FontSize="16" FontAttributes="Bold" TextColor="Black"  Grid.Column="0"  Grid.Row="0"/>
+                                <Label Padding="10,5,10,5" Text="{Binding RunTime}" FontSize="16" FontAttributes="Bold" Grid.Column="0" Grid.Row="1"/>
+
+                            </Grid>
+
+                        </ViewCell>
+
+                    </DataTemplate>
+
+
+
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

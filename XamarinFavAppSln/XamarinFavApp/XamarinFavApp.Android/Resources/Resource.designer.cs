@@ -16532,10 +16532,10 @@ namespace XamarinFavApp.Droid
 			public const int design_snackbar_background = 2131165283;
 			
 			// aapt resource value: 0x7F070064
-			public const int downloadsIcon = 2131165284;
+			public const int downloads = 2131165284;
 			
 			// aapt resource value: 0x7F070065
-			public const int HomePageIcon = 2131165285;
+			public const int home = 2131165285;
 			
 			// aapt resource value: 0x7F070066
 			public const int ic_arrow_down_24dp = 2131165286;
@@ -16589,10 +16589,10 @@ namespace XamarinFavApp.Droid
 			public const int material_ic_menu_arrow_up_black_24dp = 2131165302;
 			
 			// aapt resource value: 0x7F070077
-			public const int MoreIcon = 2131165303;
+			public const int more = 2131165303;
 			
 			// aapt resource value: 0x7F070078
-			public const int moviesIcon = 2131165304;
+			public const int movies = 2131165304;
 			
 			// aapt resource value: 0x7F070079
 			public const int mtrl_dialog_background = 2131165305;
@@ -16667,16 +16667,22 @@ namespace XamarinFavApp.Droid
 			public const int preference_list_divider_material = 2131165328;
 			
 			// aapt resource value: 0x7F070091
-			public const int SeriesIcon = 2131165329;
+			public const int series = 2131165329;
 			
 			// aapt resource value: 0x7F070092
-			public const int test_custom_background = 2131165330;
+			public const int showmax = 2131165330;
 			
 			// aapt resource value: 0x7F070093
-			public const int tooltip_frame_dark = 2131165331;
+			public const int streaming = 2131165331;
 			
 			// aapt resource value: 0x7F070094
-			public const int tooltip_frame_light = 2131165332;
+			public const int test_custom_background = 2131165332;
+			
+			// aapt resource value: 0x7F070095
+			public const int tooltip_frame_dark = 2131165333;
+			
+			// aapt resource value: 0x7F070096
+			public const int tooltip_frame_light = 2131165334;
 			
 			static Drawable()
 			{

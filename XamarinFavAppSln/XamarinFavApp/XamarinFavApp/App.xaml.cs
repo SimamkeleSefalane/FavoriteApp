@@ -10,7 +10,9 @@ namespace XamarinFavApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new FavoriteTabbedPage());
+            NavigationPage navePage = new NavigationPage(new FavoriteTabbedPage());
+            navePage.BackgroundColor = Color.Violet;
+            MainPage = navePage;
         }
 
         protected override void OnStart()

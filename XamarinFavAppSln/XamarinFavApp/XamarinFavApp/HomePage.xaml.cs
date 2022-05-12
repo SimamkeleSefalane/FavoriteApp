@@ -15,6 +15,18 @@ namespace XamarinFavApp
         public HomePage()
         {
             InitializeComponent();
+
+            SearchBar searchBar = new SearchBar {
+                Placeholder = "Search items...",
+                PlaceholderColor = Color.Orange,
+                TextColor = Color.Orange,
+                TextTransform = TextTransform.Lowercase,
+                HorizontalTextAlignment = TextAlignment.Center,
+                FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(SearchBar)),
+                FontAttributes = FontAttributes.Italic
+            };
+
+
         }
     }
 }

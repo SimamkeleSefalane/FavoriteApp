@@ -16,21 +16,8 @@ namespace XamarinFavApp
         {
             InitializeComponent();
 
-            var homePage = new HomePage();
-         //   var file = new FileImageSource();
-         ///   file.File = "HomePageIcon.png";
-            homePage.IconImageSource = "HomePageIcon.png";
-
-
-            Children.Add(homePage);
-
-            var moviesPage = new Movies();
-            //   var file = new FileImageSource();
-            ///   file.File = "HomePageIcon.png";
-            moviesPage.IconImageSource = "moviesIcon.png";
-
-
-            Children.Add(moviesPage);
+            Children.Add(new HomePage());
+            Children.Add( new Movies());
             Children.Add(new Series());
             Children.Add(new Downloads());
             Children.Add(new More());

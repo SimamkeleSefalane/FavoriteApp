@@ -12,6 +12,7 @@ namespace XamarinFavApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Movies : ContentPage
     {
+      
         public Movies()
         {
             InitializeComponent();
