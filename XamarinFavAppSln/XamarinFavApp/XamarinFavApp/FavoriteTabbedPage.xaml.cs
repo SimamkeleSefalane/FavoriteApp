@@ -17,7 +17,7 @@ namespace XamarinFavApp
             InitializeComponent();
 
             Children.Add(new HomePage());
-            Children.Add( new Movies());
+            Children.Add(new Movies());
             Children.Add(new Series());
             Children.Add(new Downloads());
             Children.Add(new More());
