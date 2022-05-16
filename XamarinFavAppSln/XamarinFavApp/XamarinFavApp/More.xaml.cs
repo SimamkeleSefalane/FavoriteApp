@@ -28,7 +28,40 @@ namespace XamarinFavApp
             _moreItems = new ObservableCollection<MoreItems>();
 
             var listMore = new MoreItems();
-            listMore.MoreName = "Sign Up";
+            listMore.MoreName = "Sign Up/Sign In";
+            listMore.MoreIcon = "username.png";
+
+            _moreItems.Add(listMore);
+
+            listMore = new MoreItems();
+            listMore.MoreName = "Kids";
+            listMore.MoreIcon = "rocket.png";
+
+            _moreItems.Add(listMore);
+
+
+            listMore = new MoreItems();
+            listMore.MoreName = "What's New";
+            listMore.MoreIcon = "star.png";
+
+            _moreItems.Add(listMore);
+
+
+            listMore = new MoreItems();
+            listMore.MoreName = "Sport";
+            listMore.MoreIcon = "soccerball.png";
+
+
+            _moreItems.Add(listMore);
+
+            listMore = new MoreItems();
+            listMore.MoreName = "Invite Your Friends";
+            listMore.MoreIcon = "gift.png";
+
+
+            _moreItems.Add(listMore);
+
+            BindingContext = this;
         }
     }
 }

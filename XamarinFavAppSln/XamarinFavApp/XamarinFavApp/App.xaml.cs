@@ -11,7 +11,7 @@ namespace XamarinFavApp
             InitializeComponent();
 
             NavigationPage navePage = new NavigationPage(new FavoriteTabbedPage());
-            navePage.BackgroundColor = Color.Violet;
+            navePage.BackgroundColor = Color.White;
             MainPage = navePage;
         }
 

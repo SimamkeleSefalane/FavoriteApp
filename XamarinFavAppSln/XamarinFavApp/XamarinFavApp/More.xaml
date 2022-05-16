@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamarinFavApp.More" Title="More" BackgroundColor="" IconImageSource="more.png">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:xamarinfavapp="clr-namespace:XamarinFavApp"
+             x:Class="XamarinFavApp.More" Title="More" IconImageSource="more.png" BackgroundColor="MediumPurple">
     <ContentPage.Content>
         <StackLayout>
 
@@ -18,11 +18,12 @@
 
                                 <Grid.ColumnDefinitions>
 
+                                    <ColumnDefinition Width="40"/>
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
 
-                                <Label Padding=" 10,5,10,5" Text="{Binding MoreName}" FontSize="16" FontAttributes="Bold" TextColor="Black"  Grid.Column="0"  Grid.Row="0"/>
-
+                                <Image Source="{Binding MoreIcon}" Grid.Column="0" Grid.RowSpan="2"/>
+                                <Label Padding=" 10,5,10,5" Text="{Binding MoreName}" FontSize="16" FontAttributes="Bold" TextColor="Black"  Grid.Column="1"  Grid.Row="0"/>
                             </Grid>
 
                         </ViewCell>

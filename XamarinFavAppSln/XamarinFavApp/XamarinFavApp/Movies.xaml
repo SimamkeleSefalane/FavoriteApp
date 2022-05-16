@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:xamarinfavapp="clr-namespace:XamarinFavApp"
-             x:Class="XamarinFavApp.Movies" Title="Movies" BackgroundColor="MediumPurple" IconImageSource="movies.png">
+             x:Class="XamarinFavApp.Movies" Title="Movies" BackgroundColor="AntiqueWhite" IconImageSource="movies.png">
     <ContentPage.Content>
         <StackLayout>
             <ListView ItemsSource="{Binding MovieCollections}" >
